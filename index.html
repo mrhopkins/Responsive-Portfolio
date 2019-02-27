@@ -1,46 +1,91 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en”>
 
 <head>
-  <meta charset="UTF-8">
-  <title>About | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset=" UTF-8”>
+
+<!--Responsive Mobile Meta Tag-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Bootstrap Portfolio</title>
+
+<link rel="icon" type="image/jpg" href=“favicon”>
+
+<!--Bootstrap links, CSS, JQUERY, JavaScript-->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
 
 <body>
 
-  <header id="masthead">
     <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+
+        <nav class="avbar navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand">Matthew Hopkins</div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </div>
     </div>
-  </header>
+    </nav>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
+    <div class="row">
+        <div class="col-sm-9" id="about">
+            <h2>About Me</h2>
+            <hr>
+            <img src="assets/images/matt.png" class="img-fluid" alt="Responsive image" />
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            </p>
+            <p>
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
 
-      <img src="assets/images/cat.jpg" class="auth-image" alt="Your Name">
+        <div class="col-sm-4" id="connect">
+            <h3>Connect with Me</h3>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum luctus felis, ac rhoncus nunc porttitor condimentum. Mauris sit amet dolor eu elit varius varius facilisis id arcu. Proin vel dui massa. Nunc rhoncus fringilla pharetra. Vestibulum bibendum consectetur euismod. Proin commodo purus vitae sollicitudin consectetur.</p>
+            <hr>
 
-      <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris.</p>
+            <a href="https://github.com/mrhopkins/" target="_blank"><i class="fa fa-github-square fa-fw fa-5x"
+                    style="color:black;"></i>
+            </a>
 
-      <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <a href="https://www.linkedin.com/in/matthewrhopkins/" target="_blank"><i
+                    class="fa fa-linkedin-square fa-5x" style="color:black;"></i>
+            </a>
 
-    </section>
-
-  </div>
-
-  <footer>
-    <div class="container">
-      Copyright &copy; 
+        </div>
     </div>
-  </footer>
+
+    <footer class="page-footer font-small blue fixed-bottom">
+        <div class="col-md-12" id="footer">© Copyright 2019 Matthew Hopkins</div>
+
+    </footer>
+
 </body>
 
 </html>
